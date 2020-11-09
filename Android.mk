@@ -1,7 +1,5 @@
 #
 # Copyright (C) 2017 The Android Open Source Project
-# Copyright (C) 2017 The TWRP Open Source Project
-# Copyright (C) 2020 SebaUbuntu's TWRP device tree generator 
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,5 +17,5 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),simba6_cricket)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+    include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
