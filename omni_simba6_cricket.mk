@@ -20,6 +20,7 @@ PRODUCT_RELEASE_NAME := simba6_cricket
 
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, build/target/product/product_launched_with_n.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)

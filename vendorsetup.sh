@@ -1,3 +1,4 @@
+#!/use/bin/env bash
 #
 # Copyright (C) 2017 The Android Open Source Project
 #
@@ -14,5 +15,21 @@
 # limitations under the License.
 #
 
+TARGET_DEVICE="US0A_ATT"
+
+export TARGET_DEVICE=$TARGET_DEVICE
+
 add_lunch_combo omni_simba6_cricket-userdebug
 add_lunch_combo omni_simba6_cricket-eng
+
+export LC_ALL="C" \
+    ARCH="arm" \
+    ALLOW_MISSING_DEPENDENCIES="true" \
+    BUILD_TYPE="Official" \
+    TARGET_DEVICE="simba6_crickei" \
+    TARGET_DEVICE_ALT="simba6_crickei" \
+    TW_MAINTAINER="lehmancurtis147"
+
+if [[ "$TARGET_DEVICE" == simba6 ]]; then
+    export TARGET_DEVICE="simba6_cricket"
+fi
