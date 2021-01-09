@@ -19,7 +19,11 @@ DEVICE_PATH := device/alcatel/simba6_cricket
 PRODUCT_RELEASE_NAME := simba6_cricket
 
 # Specify phone tech before including full_phone
+<<<<<<< HEAD
 #$(call inherit-product, vendor/omni/config/gsm.mk)
+=======
+$(call inherit-product, vendor/omni/config/gsm.mk)
+>>>>>>> 458812b9ea1783e537ec5f9434127a0884e2f1f6
 $(call inherit-product, build/target/product/product_launched_with_n.mk)
 
 # Inherit some common Omni stuff.
@@ -49,6 +53,7 @@ PRODUCT_PACKAGES += \
     healthd \
     fuelgauged_static \
     boot_control \
+<<<<<<< HEAD
     power.default \
     power.mt6750 \
     kpoc_charger \
@@ -56,3 +61,6 @@ PRODUCT_PACKAGES += \
     libfgauge \
     fuelgauged_static \
     libfgauge_stati
+=======
+    gzip
+>>>>>>> 458812b9ea1783e537ec5f9434127a0884e2f1f6

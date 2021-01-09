@@ -126,6 +126,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS  := true
 
 PRESENT_TIME_OFFSET_FROM_VSYNC_NS      := 0
 
+MTK_HARDWARE                           := true
 MTK_HWC_SUPPORT                        := yes
 MTK_HWC_VERSION                        := 1.5.0
 
@@ -150,14 +151,20 @@ AB_OTA_UPDATER                         := false
 BOARD_RECOVERY_SWIPE                   := true
 BOARD_HAS_NO_REAL_SDCARD               := false
 BOARD_HAS_NO_SELECT_BUTTON             := true
+BOARD_CHARGER_ENABLE_SUSPEND           := true
+BOARD_CHARGER_SHOW_PERCENTAGE          := true
 
 TARGET_PROVIDES_KEYMASTER              := true
 TARGET_USES_RECOVERY_AS_BOOT           := false
+TARGET_RECOVERY_DEVICE_MODULES         := true
 
 RECOVERY_SDCARD_ON_DATA                := true
 RECOVERY_GRAPHICS_USE_LINELENGTH       := true
 
+<<<<<<< HEAD
 TARGET_RECOVERY_PIXEL_FORMAT           := "BGRA_8888"
+=======
+>>>>>>> 458812b9ea1783e537ec5f9434127a0884e2f1f6
 TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_INIT_RC                := $(DEVICE_PATH)/recovery/root/init.recovery.mt6757.rc
 
@@ -173,6 +180,8 @@ TW_SCREEN_BLANK_ON_BOOT                := true
 TW_EXTRA_LANGUAGES                     := true
 TW_INCLUDE_FB2PNG                      := true
 TW_INCLUDE_CRYPTO                      := true
+TW_NO_SCREEN_BLANK                     := true
+TW_NO_BATT_PERCENT                     := false
 TW_MAX_BRIGHTNESS                      := 255
 TW_DEVICE_VERSION                      := 0
 TW_NO_SCREEN_BLANK                     := true
