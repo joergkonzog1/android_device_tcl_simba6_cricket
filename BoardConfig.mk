@@ -157,7 +157,8 @@ TARGET_USES_RECOVERY_AS_BOOT           := false
 RECOVERY_SDCARD_ON_DATA                := true
 RECOVERY_GRAPHICS_USE_LINELENGTH       := true
 
-TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_PIXEL_FORMAT           := "BGRA_8888"
+TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_INIT_RC                := $(DEVICE_PATH)/recovery/root/init.recovery.mt6757.rc
 
 # Hack: prevent anti rollback
@@ -167,12 +168,14 @@ PLATFORM_VERSION                       := 16.1.0
 ## TEAM WIN RECOVERY PROJECT PROPERTIES
 TW_THEME                               := portrait_hdpi
 TW_USE_TOOLBOX                         := true
+TW_NO_BATT_PERCENT                     := true
 TW_SCREEN_BLANK_ON_BOOT                := true
 TW_EXTRA_LANGUAGES                     := true
 TW_INCLUDE_FB2PNG                      := true
 TW_INCLUDE_CRYPTO                      := true
 TW_MAX_BRIGHTNESS                      := 255
 TW_DEVICE_VERSION                      := 0
+TW_NO_SCREEN_BLANK                     := true
 TW_INPUT_BLACKLIST                     := "hbtp_vm"
 TW_BRIGHTNESS_PATH                     := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH                := "/sys/devices/virtual/thermal/thermal_zone1/temp"
