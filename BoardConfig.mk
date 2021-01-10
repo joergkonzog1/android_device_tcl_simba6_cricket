@@ -138,6 +138,7 @@ BOARD_USES_MTK_HARDWARE                := true
 BOARD_HAS_LARGE_FILESYSTEM             := true
 BOARD_CHARGER_ENABLE_SUSPEND           := true
 BOARD_CHARGER_SHOW_PERCENTAGE          := true
+BOARD_CHARGER_DISABLE_INIT_BLANK       := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 ## PROPERTIES
@@ -161,10 +162,8 @@ TARGET_RECOVERY_DEVICE_MODULES         := true
 RECOVERY_SDCARD_ON_DATA                := true
 RECOVERY_GRAPHICS_USE_LINELENGTH       := true
 
-<<<<<<< HEAD
 TARGET_RECOVERY_PIXEL_FORMAT           := "BGRA_8888"
-=======
->>>>>>> 458812b9ea1783e537ec5f9434127a0884e2f1f6
+
 TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_INIT_RC                := $(DEVICE_PATH)/recovery/root/init.recovery.mt6757.rc
 
@@ -175,7 +174,6 @@ PLATFORM_VERSION                       := 16.1.0
 ## TEAM WIN RECOVERY PROJECT PROPERTIES
 TW_THEME                               := portrait_hdpi
 TW_USE_TOOLBOX                         := true
-TW_NO_BATT_PERCENT                     := true
 TW_SCREEN_BLANK_ON_BOOT                := true
 TW_EXTRA_LANGUAGES                     := true
 TW_INCLUDE_FB2PNG                      := true
@@ -184,7 +182,6 @@ TW_NO_SCREEN_BLANK                     := true
 TW_NO_BATT_PERCENT                     := false
 TW_MAX_BRIGHTNESS                      := 255
 TW_DEVICE_VERSION                      := 0
-TW_NO_SCREEN_BLANK                     := true
 TW_INPUT_BLACKLIST                     := "hbtp_vm"
 TW_BRIGHTNESS_PATH                     := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH                := "/sys/devices/virtual/thermal/thermal_zone1/temp"
