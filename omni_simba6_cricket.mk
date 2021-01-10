@@ -42,7 +42,6 @@ PRODUCT_NAME          := omni_simba6_cricket
 PRODUCT_BRAND         := TCL
 PRODUCT_MODEL         := 6060C
 PRODUCT_MANUFACTURER  := Alcatel
-PRODUCT_RELEASE_NAME  := Alcatel Idol 5
 
 PRODUCT_PACKAGES += \
     adbd \
