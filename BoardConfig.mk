@@ -142,7 +142,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK       := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 ## PROPERTIES
-TARGET_SYSTEM_PROP                     += $(DEVICE_PATH)/system.prop
 TARGET_LDPRELOAD                       += libmtk_symbols.so
 TARGET_OMX_LEGACY_RESCALING            := true
 
