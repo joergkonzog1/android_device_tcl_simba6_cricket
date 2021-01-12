@@ -37,11 +37,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE        := simba6_cricket
-PRODUCT_NAME          := omni_simba6_cricket
-PRODUCT_BRAND         := TCL
-PRODUCT_MODEL         := 6060C
-PRODUCT_MANUFACTURER  := Alcatel
+PRODUCT_DEVICE       := simba6_cricket
+PRODUCT_NAME         := omni_simba6_cricket
+PRODUCT_BRAND        := alcatel
+PRODUCT_MODEL        := Alcatel Idol 5
+PRODUCT_MANUFACTURER := alcatel
 
 PRODUCT_PACKAGES += \
     adbd \
