@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter simba6_cricket,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),simba6_cricket)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

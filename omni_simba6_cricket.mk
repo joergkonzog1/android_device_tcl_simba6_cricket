@@ -13,17 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/tcl/simba6_cricket
-
-# Release name
-PRODUCT_RELEASE_NAME := simba6_cricket
+TARGET_BOOTANIMATION_SIZE := 1080x1920
 
 # Specify phone tech before including full_phone
-#$(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
-$(call inherit-product, build/target/product/product_launched_with_n.mk)
 
-# Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -39,9 +33,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE       := simba6_cricket
 PRODUCT_NAME         := omni_simba6_cricket
-PRODUCT_BRAND        := alcatel
+PRODUCT_BRAND        := TCL
 PRODUCT_MODEL        := Alcatel Idol 5
-PRODUCT_MANUFACTURER := alcatel
+PRODUCT_MANUFACTURER := Alcatel
+PRODUCT_RELEASE_NAME := simba6_cricket
 
 PRODUCT_PACKAGES += \
     adbd \
