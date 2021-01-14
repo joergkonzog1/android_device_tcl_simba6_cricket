@@ -1,3 +1,4 @@
+#!/use/bin/env bash
 #
 # Copyright (C) 2017 The Android Open Source Project
 #
@@ -16,3 +17,11 @@
 
 add_lunch_combo omni_simba6_cricket-userdebug
 add_lunch_combo omni_simba6_cricket-eng
+
+#export \
+    BUILD_TYPE="Official" \
+    TW_MAINTAINER="lehmancurtis147"
+
+if [[ "$TARGET_DEVICE" == "simba6" ]]; then
+    export TARGET_DEVICE="simba6_cricket"
+fi

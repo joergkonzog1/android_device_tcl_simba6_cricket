@@ -59,7 +59,9 @@ TARGET_KERNEL_ARCH              := arm64
 TARGET_KERNEL_HEADER_ARCH       := arm64
 TARGET_USES_PREBUILT_KERNEL     := true
 TARGET_PREBUILT_KERNEL          := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
-TARGET_RECOVERY_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
 
 ## KERNEL CONFIGURATION
 BOARD_KERNEL_IMAGE_NAME         := Image.gz-dtb
@@ -126,6 +128,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS  := true
 
 PRESENT_TIME_OFFSET_FROM_VSYNC_NS      := 0
 
+#MTK_HARDWARE                           := true
 MTK_HWC_SUPPORT                        := yes
 MTK_HWC_VERSION                        := 1.5.0
 
@@ -137,10 +140,10 @@ BOARD_USES_MTK_HARDWARE                := true
 BOARD_HAS_LARGE_FILESYSTEM             := true
 BOARD_CHARGER_ENABLE_SUSPEND           := true
 BOARD_CHARGER_SHOW_PERCENTAGE          := true
+BOARD_CHARGER_DISABLE_INIT_BLANK       := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 ## PROPERTIES
-TARGET_SYSTEM_PROP                     += $(DEVICE_PATH)/system.prop
 TARGET_LDPRELOAD                       += libmtk_symbols.so
 TARGET_OMX_LEGACY_RESCALING            := true
 
@@ -150,14 +153,19 @@ AB_OTA_UPDATER                         := false
 BOARD_RECOVERY_SWIPE                   := true
 BOARD_HAS_NO_REAL_SDCARD               := false
 BOARD_HAS_NO_SELECT_BUTTON             := true
+BOARD_CHARGER_ENABLE_SUSPEND           := true
+BOARD_CHARGER_SHOW_PERCENTAGE          := true
 
 TARGET_PROVIDES_KEYMASTER              := true
 TARGET_USES_RECOVERY_AS_BOOT           := false
+#TARGET_RECOVERY_DEVICE_MODULES         := true
 
 RECOVERY_SDCARD_ON_DATA                := true
 RECOVERY_GRAPHICS_USE_LINELENGTH       := true
 
-TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_PIXEL_FORMAT           := "BGRA_8888"
+
+TARGET_RECOVERY_FSTAB                  := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_INIT_RC                := $(DEVICE_PATH)/recovery/root/init.recovery.mt6757.rc
 
 # Hack: prevent anti rollback
@@ -171,6 +179,8 @@ TW_SCREEN_BLANK_ON_BOOT                := true
 TW_EXTRA_LANGUAGES                     := true
 TW_INCLUDE_FB2PNG                      := true
 TW_INCLUDE_CRYPTO                      := true
+TW_NO_SCREEN_BLANK                     := true
+TW_NO_BATT_PERCENT                     := false
 TW_MAX_BRIGHTNESS                      := 255
 TW_DEVICE_VERSION                      := 0
 TW_INPUT_BLACKLIST                     := "hbtp_vm"

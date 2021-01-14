@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/alcatel/simba6_cricket/
+
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/omni_simba6_cricket.mk

@@ -18,7 +18,6 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1arm7   0660    root    system
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md3img    0660    root    system
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot_para 0640    root    system
-/dev/block/mmcblk0p10                                           0640    root    system
 
 # OTP
 /dev/otp                  0660   system     system
@@ -121,3 +120,6 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
+
+########TrustKernel add start 2017-5-28
+/dev/tkcoredrv            0666   root       root
