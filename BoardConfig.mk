@@ -17,7 +17,7 @@
 # See http://www.gnu.org/licenses/gpl-2.0.html for more details        #
 ########################################################################
 
-DEVICE_PATH                     := device/alcatel/simba6_cricket
+DEVICE_PATH                     := device/tcl/simba6_cricket
 
 BOARD_VENDOR                    := TCL
 
@@ -128,7 +128,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS  := true
 
 PRESENT_TIME_OFFSET_FROM_VSYNC_NS      := 0
 
-MTK_HARDWARE                           := true
+#MTK_HARDWARE                           := true
 MTK_HWC_SUPPORT                        := yes
 MTK_HWC_VERSION                        := 1.5.0
 
@@ -151,14 +151,14 @@ TARGET_OMX_LEGACY_RESCALING            := true
 AB_OTA_UPDATER                         := false
 
 BOARD_RECOVERY_SWIPE                   := true
-BOARD_HAS_NO_REAL_SDCARD               := false
+BOARD_HAS_NO_REAL_SDCARD               := true
 BOARD_HAS_NO_SELECT_BUTTON             := true
 BOARD_CHARGER_ENABLE_SUSPEND           := true
 BOARD_CHARGER_SHOW_PERCENTAGE          := true
 
 TARGET_PROVIDES_KEYMASTER              := true
 TARGET_USES_RECOVERY_AS_BOOT           := false
-TARGET_RECOVERY_DEVICE_MODULES         := true
+#TARGET_RECOVERY_DEVICE_MODULES         := true
 
 RECOVERY_SDCARD_ON_DATA                := true
 RECOVERY_GRAPHICS_USE_LINELENGTH       := true
