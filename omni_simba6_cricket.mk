@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/alcatel/simba6_cricket
+DEVICE_PATH := device/tcl/simba6_cricket
 
 # Release name
 PRODUCT_RELEASE_NAME := simba6_cricket
