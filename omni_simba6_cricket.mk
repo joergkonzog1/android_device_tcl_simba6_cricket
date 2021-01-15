@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The Android Open Source Project
+# Copyright (C) 2017 The TWRP Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-TARGET_BOOTANIMATION_SIZE := 1080x1920
 
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
+# Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -25,10 +26,13 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit language packages
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit 64bit support
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# boot animation size
+TARGET_BOOTANIMATION_SIZE := 1080x1920
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE       := simba6_cricket
