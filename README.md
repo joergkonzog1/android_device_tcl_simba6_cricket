@@ -1,7 +1,5 @@
 # **TWRP BRANCH**
 ---
-___
-#
 ---
 
 # ALCATEL IDOL 5 _*(6060C)*_
@@ -15,11 +13,7 @@ ___
 
 # __DEVICE HARDWARE SPECIFICATIONS__
 ___
-___
-#
 ---
-#
-#
 #
 |**HARDWARE**           | **EQUIPTMENT TYPE**|
 |:----------------------|:-------------------:
