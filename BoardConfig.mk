@@ -17,7 +17,7 @@
 # See http://www.gnu.org/licenses/gpl-2.0.html for more details        #
 ########################################################################
 
-DEVICE_PATH                     := device/alcatel/simba6_cricket
+DEVICE_PATH                     := device/tcl/simba6_cricket
 
 BOARD_VENDOR                    := TCL
 

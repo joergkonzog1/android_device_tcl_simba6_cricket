@@ -1,7 +1,7 @@
 # TWRP DEVICE TREE FOR ALCATEL IDOL 5 (6060C)
 
 
-## {Device configuration for TWRP_device_simba6_cricket}
+## {Device configuration for TWRP_device_tcl_simba6_cricket}
 
 
 Alcatel Idol 5 is a low-mid range phone on a MT6757 SoC and is a part of the TCL/Alcatel device family. The Idol 5 is codenamed simba6_cricket or simba6_global. This is for the Cricket variant.
