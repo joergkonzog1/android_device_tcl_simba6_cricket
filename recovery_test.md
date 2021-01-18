@@ -27,7 +27,7 @@ ___
 - [x] Screen goes off and on
 - [x] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [x] all important partitions listed in mount/backup lists
-- [N] backup/restore to/from external (USB-OTG) storage (not supported by the device)
+- [x] backup/restore to/from external (USB-OTG) storage (not supported by the device)
 - [x] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/) *MUST INCLUDE <--twrp> in command
 - [x] decrypt /data
 - [x] Correct date
