@@ -13,8 +13,7 @@ ___
 
 # __DEVICE HARDWARE SPECIFICATIONS__
 ___
----
-#
+
 |**HARDWARE**           | **EQUIPTMENT TYPE**|
 |:----------------------|:-------------------:
 CPU                     | 4 x 2.3GHz ARM Cortex-A53,
