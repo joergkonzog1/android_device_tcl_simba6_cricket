@@ -153,8 +153,6 @@ AB_OTA_UPDATER                         := false
 BOARD_RECOVERY_SWIPE                   := true
 BOARD_HAS_NO_REAL_SDCARD               := false
 BOARD_HAS_NO_SELECT_BUTTON             := true
-BOARD_CHARGER_ENABLE_SUSPEND           := true
-BOARD_CHARGER_SHOW_PERCENTAGE          := true
 
 TARGET_PROVIDES_KEYMASTER              := true
 TARGET_USES_RECOVERY_AS_BOOT           := false
@@ -186,7 +184,7 @@ TW_DEVICE_VERSION                      := 0
 TW_INPUT_BLACKLIST                     := "hbtp_vm"
 TW_BRIGHTNESS_PATH                     := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH                := "/sys/devices/virtual/thermal/thermal_zone1/temp"
-TW_CUSTOM_BATTERY_PATH                 := "/sys/devices/platform/battery/power_supply/battery"
+TW_CUSTOM_BATTERY_PATH                 := "/sys/devices/platform/battery/Charging_CallState"
 
 TWHAVE_SELINUX                         := true
 
